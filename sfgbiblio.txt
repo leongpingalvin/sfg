@@ -1,0 +1,7 @@
+https://1drv.ms/x/c/35f288b2e57b6ed2/IQQo4woqcVuYTbD0X8bmeGTTAZdjGKdwTQgR4tHqZCUmspY?AllowTyping=True&ActiveCell='Search'!B3&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True
+
+
+Formula for search bar
+Search bar cell is B3. The assigned Table is Table1
+
+=IF(B3="","",FILTER(Table1,ISNUMBER(SEARCH(B3,Table1[Category]))+ISNUMBER(SEARCH(B3,Table1[Type]))+ISNUMBER(SEARCH(B3,Table1[Year]))+ISNUMBER(SEARCH(B3,Table1[Author]))+ISNUMBER(SEARCH(B3,Table1[Article Title]))+ISNUMBER(SEARCH(B3,Table1[Journal]))+ISNUMBER(SEARCH(B3,Table1[Vol.]))+ISNUMBER(SEARCH(B3,Table1[Iss.]))+ISNUMBER(SEARCH(B3,Table1[Pages]))+ISNUMBER(SEARCH(B3,Table1[Book Title]))+ISNUMBER(SEARCH(B3,Table1[Editor]))+ISNUMBER(SEARCH(B3,Table1[Degree]))+ISNUMBER(SEARCH(B3,Table1[University]))+ISNUMBER(SEARCH(B3,Table1[Database]))+ISNUMBER(SEARCH(B3,Table1[Place]))+ISNUMBER(SEARCH(B3,Table1[Publisher])),"Nil"))
